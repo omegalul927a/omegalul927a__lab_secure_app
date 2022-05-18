@@ -18,4 +18,4 @@ jobs:
     - name: Run Scan
       run: |
         mvn package
-        docker run -e OSS_USERNAME=omegalul927@gmail.com -e OSS_KEY=b91c9adc92d603dcc50ab4881b4982b3357bf860 -e MIXEWAY_URL=https://hub.mixeway.io -e MIXEWAY_KEY=3c887286-6f80-4b4a-a283-0b51de1f92b9 -e MIXEWAY_PROJECT_ID=87 -e MODE=STANDALONE -e MIXEWAY_PROJECT_NAME=omegalul927a__lab_secure_app -e COMMIT_ID=${{ steps.vars.outputs.sha_short }} -e BRANCH=${{ steps.vars.outputs.branch }} -v ${PWD}:/opt/sources mixeway/scanner:latest
+        docker run -e OSS_USERNAME=omegalul927@gmail.com -e OSS_KEY=b91c9adc92d603dcc50ab4881b4982b3357bf860 -e MIXEWAY_URL=https://hub.mixeway.io -e MIXEWAY_KEY="61eed533-5226-44e2-9281-a9e27678e0d1" -e MIXEWAY_PROJECT_ID=87 -e MODE=STANDALONE -e MIXEWAY_PROJECT_NAME=omegalul927a__lab_secure_app -e COMMIT_ID=${{ steps.vars.outputs.sha_short }} -e BRANCH=${{ steps.vars.outputs.branch }} -v ${PWD}:/opt/sources mixeway/scanner:latest
